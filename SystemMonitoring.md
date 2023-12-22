@@ -80,7 +80,7 @@ gdb) clear functionName [//](//clear)remove function break
 
 # Blktrace
 
-trace lba information
+Trace lba information of a specific block device (e.g., /dev/sda, /dev/nvme0n1)
 
 ```bash
 blktrace -d <dev> -o - | blkparse -i - -o <trace_file>
